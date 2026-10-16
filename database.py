@@ -1,5 +1,6 @@
 import sqlite3
 
+
 # Connect to the SQLite database
 conn = sqlite3.connect(
     "database/workforce.db",
@@ -7,6 +8,7 @@ conn = sqlite3.connect(
 )
 
 cursor = conn.cursor()
+
 
 # Create the employees table
 cursor.execute("""

@@ -29,6 +29,9 @@ jobs:
           pip install -r requirements.txt
 
       # TODO: Add flake8 linting here
+      - name: Run flake8
+        run: flake8 .
+
 
 
   package:
@@ -40,3 +43,7 @@ jobs:
         uses: actions/checkout@v4
 
       # TODO: Zip the application here
+      - name: Zip application
+        run: zip -r qacafe-app.zip .
+
+
